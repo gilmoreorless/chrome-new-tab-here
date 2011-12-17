@@ -1,0 +1,12 @@
+{
+	"name": "Open In New Tab",
+	"version": "0.0.1",
+	"description": "Keyboard shortcut to open a new tab next to the current one",
+	"icons": {},
+	"background_page": "bg.html",
+	"content_scripts": [{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["newtab-keyboard-listener.js"]
+	}],
+	"permissions": ["tabs"]
+}
