@@ -1,12 +1,24 @@
 {
 	"name": "Open In New Tab",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Keyboard shortcut to open a new tab next to the current one",
+	"manifest_version": 2,
 	"icons": {},
-	"background_page": "bg.html",
-	"content_scripts": [{
-		"matches": ["http://*/*", "https://*/*"],
-		"js": ["newtab-keyboard-listener.js"]
-	}],
+	"background": {
+		"scripts": ["listener.js"]
+	},
+	// "content_scripts": [{
+	// 	"matches": ["http://*/*", "https://*/*"],
+	// 	"js": ["newtab-keyboard-listener.js"]
+	// }],
+	"commands": {
+		"newtab": {
+			"suggested_key": {
+				"mac": "Command+MacCtrl+T"
+			},
+			"description": "Open a new tab next to the current one"
+		}
+	},
+
 	"permissions": ["tabs"]
 }
