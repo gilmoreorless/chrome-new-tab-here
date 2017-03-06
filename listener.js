@@ -6,14 +6,8 @@ function openNewTab(origTab) {
 	chrome.tabs.create(opts);
 }
 
-chrome.extension.onRequest.addListener(function (request, sender) {
-	if (request == 'newtab') {
-		openNewTab(sender.tab);
-	}
-});
-
 chrome.commands.onCommand.addListener(function (command) {
-	if (command == 'newtab') {
+	if (command == 'new-tab-here') {
 		chrome.tabs.getSelected(openNewTab);
 	}
 });
