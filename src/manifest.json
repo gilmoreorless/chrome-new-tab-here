@@ -1,7 +1,8 @@
 {
 	"name": "Open New Tab Here",
-	"version": "0.1.0",
-	"description": "Keyboard shortcut to open a new tab next to the current one",
+	"short_name": "New Tab Here",
+	"version": "0.1.1",
+	"description": "A shortcut to open a new tab next to the current one",
 	"manifest_version": 2,
 	"icons": {
 		"16": "icons/icon-16.png",
