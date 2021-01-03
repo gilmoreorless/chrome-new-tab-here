@@ -1,7 +1,7 @@
 {
 	"name": "Open New Tab Here",
 	"short_name": "New Tab Here",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A shortcut to open a new tab next to the current one",
 	"manifest_version": 2,
 	"icons": {
@@ -26,6 +26,5 @@
 			},
 			"description": "Open a new tab next to the current one"
 		}
-	},
-	"permissions": ["tabs"]
+	}
 }
