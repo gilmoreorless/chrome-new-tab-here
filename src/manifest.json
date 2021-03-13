@@ -1,7 +1,7 @@
 {
 	"name": "Open New Tab Here",
 	"short_name": "New Tab Here",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "A shortcut to open a new tab next to the current one",
 	"manifest_version": 2,
 	"icons": {
@@ -25,6 +25,13 @@
 				"mac": "MacCtrl+T"
 			},
 			"description": "Open a new tab next to the current one"
+		},
+		"new-tab-here-background": {
+			"suggested_key": {
+				"default": "Alt+Shift+T",
+				"mac": "MacCtrl+Shift+T"
+			},
+			"description": "Open a new tab in the background next to the current one"
 		}
 	}
 }
