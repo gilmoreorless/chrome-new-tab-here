@@ -19,4 +19,4 @@ chrome.commands.onCommand.addListener(function (command) {
 	}
 });
 
-chrome.browserAction.onClicked.addListener(openNewTab);
+chrome.action.onClicked.addListener(openNewTab);
